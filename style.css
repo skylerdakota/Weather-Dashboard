@@ -1,0 +1,34 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1;
+  }
+
+  .navbar {
+    text-align: center;
+    background-color: rgb(46, 93, 194);
+    color: rgb(255, 255, 255);
+    border-radius: 0;
+    border-bottom: 2px solid black;
+  }
+
+  .search-side-bar{
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-left: none;
+    height: 1000px;
+
+  }
+
+  #citySearch {
+    border-left: 1px solid black;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #063dd5;
+    color: white;
+  }
+  
+  .today{
+    padding-top: 20px;
+    height: 1000px;
+  }
