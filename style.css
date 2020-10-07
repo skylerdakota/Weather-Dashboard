@@ -27,6 +27,11 @@ body {
     font-size: 12px
   }
 
+  button{
+    background-color: rgb(213, 129, 221);
+    color: rgb(255, 255, 255);
+  }
+
     #citySearch{
     background-color: rgb(213, 129, 221);
     color: rgb(255, 255, 255);

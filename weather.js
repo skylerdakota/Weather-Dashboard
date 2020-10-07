@@ -6,7 +6,8 @@ $(document).ready(function () {
 
         searchWeather(queryTerm)
 
-
+        // Calling the renderButtons function to display the initial buttons   
+        renderButtons();
 
     })
 
@@ -93,30 +94,37 @@ $(document).ready(function () {
             })
     };
 
-    // // Function for displaying movie data
-    // function renderButtons() {
+    // Function for displaying movie data
+    function renderButtons(city) {
 
-    //     // Deleting the cities prior to adding new cities
-    //     // (this is necessary otherwise you will have repeat buttons)
-    //     $("#buttons-view").empty();
+        // var newLi = $("<li>")
+        // var city = $("#city-input").val().trim();
 
-    //     var cities = [];
+        // $(".history").append(newLi.append(city))
 
-    //     // Looping through the array of cities
-    //     for (var i = 0; i < cities.length; i++) {
+        var newButton = $("<button>")
+        var city = $("#city-input").val().trim();
 
-    //         // Then dynamicaly generating buttons for each city in the array
-    //         var a = $("<button>");
-    //         // Adding a class of city-btn to our button
-    //         a.addClass("city-btn");
-    //         // Adding a data-attribute
-    //         a.attr("data-name", cities[i]);
-    //         // Providing the initial button text
-    //         a.text(cities[i]);
-    //         // Adding the button to the buttons-view div
-    //         $("#buttons-view").append(a);
-    //     };
-    // };
+        $(".history").append(newButton.append(city))
+
+
+        // var cities = [];
+
+        // // Looping through the array of cities
+        // for (var i = 0; i < cities.length; i++) {
+
+        //     // Then dynamicaly generating buttons for each city in the array
+        //     var a = $("<button>");
+        //     // Adding a class of city-btn to our button
+        //     a.addClass("city-btn");
+        //     // Adding a data-attribute
+        //     a.attr("data-name", cities[i]);
+        //     // Providing the initial button text
+        //     a.text(cities[i]);
+        //     // Adding the button to the buttons-view div
+        //     $("#buttons-view").append(a);
+        // };
+    };
 
     // // This function handles events where a city button is clicked
     // $("#citySearch").on("click", function(event) {
@@ -126,10 +134,5 @@ $(document).ready(function () {
     
     // // Adding city from the textbox to our array
     // cities.push(city);
-
-
-    // // Calling the renderButtons function to display the initial buttons   
-    // renderButtons();
-
 
 })
