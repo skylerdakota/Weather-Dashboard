@@ -1,102 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Weather Dashboard</title>
-    
-  </head>
 
-  <body>
+</head>
+
+<body>
     <!-- Header -->
     <header class="navbar">
-      <h1>Weather Dashboard</h1>
+        <h1>Weather Dashboard</h1>
     </header>
 
     <div class="container">
-      <row>
-        <!-- Side Column with Search Bar -->
-        <div class="col-4 search-side-bar card bg-light mb-3" style="max-width: 18rem;">
-            <h5 class="card-title">Search for a city:</h5>
-            <div class="input-group mb-3">
-                <input type="text" id="city-input" class="form-control" placeholder="City" aria-label="City" aria-describedby="button-addon2">
-                <div class="input-group-append">
-                <button class="btn btn-outline-secondary" type="button" id="citySearch">Search</button>
+        <div class="row">
+            <!-- Side Column with Search Bar -->
+            <div class="col-4 search-side-bar card mb-3" style="max-width: 18rem;">
+                <h5 class="card-title">Search for a city:</h5>
+                <div class="input-group mb-3">
+                    <input type="text" id="city-input" class="form-control" placeholder="City" aria-label="City"
+                        aria-describedby="button-addon2">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary" type="button" id="citySearch">Search</button>
+                    </div>
+                    <ul class="list-group history"></ul>
                 </div>
             </div>
-            <div class="addCity card-body">
-            </div>
-            </div>
-        <!-- Search Result Section -->
-        <div class="col-8">
-            <div class="card" style="width: 18rem;">
-                <div class="today card-body">
-                <h5 class="card-title"id="currentDay"></h5>
-                </div>
-            </div>
-            <!-- 5 Day Forecast section -->
-            <row>
-                <div class="5day" style="width: 18rem;">
-                    <div class="card-body">
-                    <h5 class="card-title">5-Day Forecast: </h5>
-                    </div>
-                </div>
-            </row>
-            <!-- Search Result cards for five day forecast section -->
-            <row>
-                <div id="forecast" class="col-1 card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                    <p id="day1Day"></p>
-                    </div>
-                </div>
-                <div id="forecast" class="col-1 card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                    <p id="day2Day"></p>
-                    </div>
-                </div>
-                <div id="forecast" class="col-1 card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                    <p id="day3Day"></p>
-                    </div>
-                </div>
-                <div id="forecast" class="col-1 card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                    <p id="day4Day"></p>
-                    </div>
-                </div>
-                <div id="forecast" class="col-1 card text-white bg-primary mb-3" style="max-width: 18rem;">
-                    <div class="card-body">
-                    <p id="day5Day"></p> 
-                    </div>
-                </div>
-            </row>
-        </div>  
-    </row>
-   
+            <div class= "col-6 mb-3" id="today"></div> 
+        </div>
+        <div class="row" id="forecast">
+          
+        </div>
+    </div>
 
-       <!-- Added link to the jQuery Library -->
-       <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-      <!-- Added link to moment.js Library -->
-       <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-      <!-- Added link to the javascript file -->
-      <script src="script.js"></script>
-     
-    
-  </body>
+    <!-- Added link to the jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- Added link to moment.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <!-- Added link to the javascript file -->
+    <script src="weather.js"></script>
+
+
+</body>
+
 </html>

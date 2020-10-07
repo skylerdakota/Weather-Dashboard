@@ -2,33 +2,51 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1;
+    background-color: rgb(255, 250, 175);
+    color: white;
   }
 
   .navbar {
     text-align: center;
-    background-color: rgb(46, 93, 194);
+    background-color: rgb(213, 129, 221);
     color: rgb(255, 255, 255);
     border-radius: 0;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid rgb(30, 151, 151);
   }
 
   .search-side-bar{
     margin-top: 20px;
     padding-top: 20px;
     padding-left: none;
-    height: 1000px;
-
-  }
-
-  #citySearch {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #063dd5;
-    color: white;
+    background-color: rgb(30, 151, 151);
+    color: rgb(255, 255, 255);
   }
   
-  .today{
+    div.card{
+    background-color: rgb(30, 206, 206);
+    font-size: 12px
+  }
+
+    #citySearch{
+    background-color: rgb(213, 129, 221);
+    color: rgb(255, 255, 255);
+  }
+
+  #today{
     padding-top: 20px;
-    height: 1000px;
+  }
+
+  .poor {
+    background-color: #bd0000;
+    color: white;
+  }
+
+  .good {
+    background-color: #42e700;
+    color: white;
+  }
+
+  .fair {
+    background-color: #e7d000;
+    color: white;
   }
