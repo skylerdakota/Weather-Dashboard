@@ -12,7 +12,7 @@ $(document).ready(function () {
     function searchWeather(city) {
         $("#today").empty();
         // Constructing a queryURL using the city name
-        var queryURLDaily = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ac397bc3c44a88b8f39a86ff30ffc0cc&units=imperial";
+        var queryURLDaily = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=ac397bc3c44a88b8f39a86ff30ffc0cc&units=imperial";
         $.ajax({
             url: queryURLDaily,
             method: "GET",
